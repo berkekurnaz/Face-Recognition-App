@@ -1,0 +1,12 @@
+{
+  "name": "FaceRecognitionApp",
+  "version": "1.0.0",
+  "description": "Browser based simple face recognition application. It saves the pictures in its own database and tries to recognize them. \r It can make recognition with your device's camera or images. Can be used with IoT devices(example: Raspberry-Pi).",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
