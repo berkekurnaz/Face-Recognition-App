@@ -4,9 +4,19 @@
   "description": "Browser based simple face recognition application. It saves the pictures in its own database and tries to recognize them. \r It can make recognition with your device's camera or images. Can be used with IoT devices(example: Raspberry-Pi).",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "mongoose": "^5.9.7",
+    "nodemon": "^2.0.2"
+  }
 }
