@@ -1,0 +1,37 @@
+<div class="container">
+    <h3>Person List</h3>
+
+    <a href="/person/add" class="waves-effect waves-light btn"><i class="material-icons left">add</i>Add New Person</a>
+    <br/> <br/>
+    <table class="striped centered">
+        <thead>
+            <tr>
+                <th>Person Id</th>
+                <th>Name Surname</th>
+                <th>Username</th>
+                <th>Operations</th>
+                <th>Images</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% persons.forEach(function(person) { %>
+                <tr>
+                    <td><%= person._id %></td>
+                    <td><%= person.namesurname %></td>
+                    <td><%= person.username %></td>
+                    <td>
+                        <a href="/person/update/<%= person._id %>" class="waves-effect waves-light btn-small">Update</a>
+                    </td>
+                    <td>
+                        <a href="/image/<%= person._id %>" class="waves-effect waves-light btn-small">Images</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <br/>
+    <blockquote>
+        Please remember to add face photos of the people you added.
+    </blockquote>
+</div>

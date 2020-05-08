@@ -1,0 +1,33 @@
+<div class="container center-align">
+    <div class="row">
+        <h3>Yeni Kişi Ekle</h3>
+        <br />
+        <form method="POST" action="/person/add">
+            <div class="input-field col s6 offset-m3">
+                <input placeholder="Eklenecek Kişinin Adı Ve Soyadı" id="namesurname" name="namesurname" type="text" class="validate">
+                <label for="namesurname">Ad Soyad</label>
+            </div>
+            <div class="input-field col s6 offset-m3">
+                <input placeholder="Eklenecek Kişinin Adresi" id="address" name="address" type="text" class="validate">
+                <label for="address">Adres</label>
+            </div>
+            <div class="input-field col s6 offset-m3">
+                <input placeholder="Eklenecek Kişinin Kullanıcı Adı" id="username" name="username" type="text" class="validate">
+                <label for="username">Kullanıcı Adı</label>
+            </div>
+            <div class="input-field col s6 offset-m3">
+                <input placeholder="Eklenecek Kişinin Şifresi" id="password" name="password" type="text" class="validate">
+                <label for="password">Şifre</label>
+            </div>
+            <div class="input-field col s6 offset-m3">
+                <button type="submit" class="waves-effect waves-light btn"><i class="material-icons left">add</i>YENİ
+                    KİŞİ EKLE</button>
+            </div>
+            <div class="input-field col s6 offset-m3">
+                <blockquote>
+                    <p><b>Not: </b> Oluşturduğunuz Kişilere Ait Fotoğrafları Daha Sonra Eklemeyi Unutmayınız...</p>
+                </blockquote>
+            </div>
+        </form>
+    </div>
+</div>
