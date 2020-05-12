@@ -1,0 +1,33 @@
+<div class="container">
+    <h3>Person Images List</h3>
+
+    <a href="/person/imageadd/<%= person._id %>" class="waves-effect waves-light btn"><i class="material-icons left">add</i>Add New Image</a>
+    <br/> <br/>
+    <table class="striped centered">
+        <thead>
+            <tr>
+                <th>Person Name</th>
+                <th>Image Id</th>
+                <th>Image</th>
+                <th>Operations</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% images.forEach(function(image) { %>
+                <tr>
+                    <td><%= image.person_id %></td>
+                    <td><%= image._id %></td>
+                    <td><img src="/imagedatabase/<%= image.person_id %>/<%= image.imageUrl %>" width="100"></td>
+                    <td>
+                        <a href="/person/images/delete/<%= image.person_id %>/<%= image._id %>" class="waves-effect waves-light btn-small">Delete</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <br/>
+    <blockquote>
+        Bu sayfada kişiye ait fotoğraflar listelenir...
+    </blockquote>
+</div>

@@ -1,0 +1,36 @@
+<div class="container center-align">
+    <div class="row">
+        <h3>Add New Image</h3>
+        <br />
+        <form method="POST" ref='uploadForm' id='uploadForm' action="/person/imageadd" encType="multipart/form-data">
+            <div class="input-field col s6 offset-m3">
+                <input placeholder="Image Title" id="title" name="title" type="text" class="validate">
+                <label for="namesurname">Image Title</label>
+            </div>
+            <div style="display: none;" class="input-field col s6 offset-m3">
+                <input value="<%= personId %>" id="person_id" name="person_id" type="text" class="validate">
+                <label for="namesurname">Person Id</label>
+            </div>
+            <div class="input-field col s6 offset-m3">
+                <div class="file-field input-field">
+                    <div class="btn">
+                        <span>File</span>
+                        <input type="file" id="image" name="image">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Person Face Image">
+                    </div>
+                </div>
+            </div>
+            <div class="input-field col s6 offset-m3">
+                <button type="submit" class="waves-effect waves-light btn"><i class="material-icons left">add</i>Add
+                    New Image</button>
+            </div>
+            <div class="input-field col s6 offset-m3">
+                <blockquote>
+                    <p>Daha doğru sonuçlar için bir kişiye ait en az 3 resim ekleyin...</p>
+                </blockquote>
+            </div>
+        </form>
+    </div>
+</div>

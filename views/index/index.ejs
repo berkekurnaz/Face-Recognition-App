@@ -5,9 +5,8 @@
 </style>
 
 <div class="container center">
-    <br /><br /><br />
-    <h1 class="header center orange-text">Anasayfa</h1>
     <br />
+    <!--
     <div class="row center">
         <a href="/person" class="my-a waves-effect waves-light btn btn-large"><i class="material-icons left">people</i>Person List</a>
         <a href="/person/add" class="my-a waves-effect waves-light btn btn-large"><i class="material-icons left">person_add</i>Add New Person</a>
@@ -25,6 +24,94 @@
     <div class="row center">
       <p>Tarih: 5 Mayıs 2020 14:13</p>
     </div>
-
+     -->
+    <div class="row">
+        <div class="col s4 m4">
+            <div id="btnGo1" class="card" style="height: 300px;">
+                <div class="card-image">
+                    <img src="img/res01.png" height="150px" style="object-fit: contain;">
+                </div>
+                <div class="card-content">
+                    <h4>Get All Person List</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col s4 m4">
+            <div id="btnGo2" class="card" style="height: 300px;">
+                <div class="card-image">
+                    <img src="img/res02.png" height="150px" style="object-fit: contain">
+                </div>
+                <div class="card-content">
+                    <h4>Add New Person</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col s4 m4">
+            <div id="btnGo3" class="card" style="height: 300px;">
+                <div class="card-image">
+                    <img src="img/res03.png" height="150px" style="object-fit: contain">
+                </div>
+                <div class="card-content">
+                    <h4>Live Recognition</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s4 m4">
+            <div id="btnGo4" class="card" style="height: 300px;">
+                <div class="card-image">
+                    <img src="img/res04.png" height="150px" style="object-fit: contain">
+                </div>
+                <div class="card-content">
+                    <h4>Image Recognition</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col s4 m4">
+            <div id="btnGo5" class="card" style="height: 300px;">
+                <div class="card-image">
+                    <img src="img/res05.png" height="150px" style="object-fit: contain">
+                </div>
+                <div class="card-content">
+                    <h4>Settings</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col s4 m4">
+            <div id="btnGo6" class="card" style="height: 300px;">
+                <div class="card-image">
+                    <img src="img/res06.png" height="150px" style="object-fit: contain">
+                </div>
+                <div class="card-content">
+                    <h4>How To Use ?</h4>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+
+    $("#btnGo1").click(function () {
+        window.location.href = "/person";
+    });
+    $("#btnGo2").click(function () {
+        window.location.href = "/person/add";
+    });
+    $("#btnGo3").click(function () {
+        window.location.href = "/liverecognition";
+    });
+    $("#btnGo4").click(function () {
+        window.location.href = "/imagerecognition";
+    });
+    $("#btnGo5").click(function () {
+        window.location.href = "/settings";
+    });
+    $("#btnGo6").click(function () {
+        window.location.href = "/howtouse";
+    });
+
+</script>

@@ -14,6 +14,9 @@ app.set('layout', 'layout/layout.ejs');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+const fileUpload = require('express-fileupload');
+app.use(fileUpload());
+
 const db = require("./helpers/db")();
 
 // Routes
