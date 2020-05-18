@@ -1,1 +1,54 @@
-ee
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Face Recognition App</title>
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" />
+
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    canvas {
+        position: absolute;
+      }
+    </style>
+
+  <script defer src="js/face-api.min.js"></script>
+  <script defer src="js/appImage.js"></script>
+</head>
+
+<body>
+
+  <div id="filestate">
+    <h3>Loading Models...</h3>
+  </div>
+
+  <div id="filearea" style="display: none;" class="file-field input-field">
+    <div class="btn">
+      <span>File</span>
+      <input type="file" id="image">
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text">
+    </div>
+  </div>
+
+  <script>
+    var liste = '<%- personList %>';
+    liste = JSON.parse(liste);
+    console.log("Liste Yuklendi...");
+  </script>
+</body>
+
+</html>
