@@ -10,7 +10,7 @@ Promise.all([
 
 /* Kisileri Tespit Etme ve Cizim Islemleri */
 async function start() {
-
+    document.getElementById("laodingText").style.display = "none";
     navigator.getUserMedia(
         {
             video: {}
@@ -20,7 +20,6 @@ async function start() {
     );
 
     document.body.style.backgroundColor = "#ecf0f1";
-    document.body.append("Tüm modeller Yüklendi..");
 
     video.addEventListener("play", async () => {
 
@@ -43,7 +42,7 @@ async function start() {
 
                 canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
             const resizedDetections = faceapi.resizeResults(detections, boxSize);
-            console.log(resizedDetections);
+            //console.log(resizedDetections);
 
             const results = resizedDetections.map(d =>
                 faceMatcher.findBestMatch(d.descriptor)
@@ -81,7 +80,7 @@ async function loadImages() {
         const descriptions = [];
   
         for (let i = 0; i < label.images.length; i++) {
-          console.log("Resim : " + label.images[i].imageUrl);
+          console.log("Image : " + label.images[i].imageUrl);
           const image = await faceapi.fetchImage(
             `imagedatabase/${label._id}/${label.images[i].imageUrl}`
           );

@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Face Recognition App</title>
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jost|Montserrat|Muli&display=swap" rel="stylesheet">
   
   <style>
     body {
@@ -29,14 +31,15 @@
   <script defer src="js/appCamera.js"></script>
 </head>
 
-<body>
+<body style="font-family: 'Montserrat', sans-serif;">
 
+  <h3 id="laodingText">Loading Models...</h3>
   <video id="video" width="720" height="540" autoplay muted></video>
 
   <script>
     var liste = '<%- personList %>';
     liste = JSON.parse(liste);
-    console.log("Liste Yuklendi...");
+    console.log("Uploaded User List...");
   </script>
 
 </body>

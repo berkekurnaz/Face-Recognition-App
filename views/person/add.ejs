@@ -1,31 +1,30 @@
 <div class="container center-align">
     <div class="row">
-        <h3>Yeni Kişi Ekle</h3>
+        <h3>Add New Person</h3>
         <br />
         <form method="POST" action="/person/add">
-            <div class="input-field col s6 offset-m3">
-                <input placeholder="Eklenecek Kişinin Adı Ve Soyadı" id="namesurname" name="namesurname" type="text" class="validate">
-                <label for="namesurname">Ad Soyad</label>
+            <div class="input-field col s12 m6 offset-m3">
+                <input placeholder="Please Enter Name Surname" id="namesurname" name="namesurname" type="text" class="validate">
+                <label for="namesurname">Name Surname</label>
             </div>
-            <div class="input-field col s6 offset-m3">
-                <input placeholder="Eklenecek Kişinin Adresi" id="address" name="address" type="text" class="validate">
-                <label for="address">Adres</label>
+            <div class="input-field col s12 m6 offset-m3">
+                <input placeholder="Please Enter Address" id="address" name="address" type="text" class="validate">
+                <label for="address">Address</label>
             </div>
-            <div class="input-field col s6 offset-m3">
-                <input placeholder="Eklenecek Kişinin Kullanıcı Adı" id="username" name="username" type="text" class="validate">
-                <label for="username">Kullanıcı Adı</label>
+            <div class="input-field col s12 m6 offset-m3">
+                <input placeholder="Please Enter Username" id="username" name="username" type="text" class="validate" required>
+                <label for="username">Username</label>
             </div>
-            <div class="input-field col s6 offset-m3">
-                <input placeholder="Eklenecek Kişinin Şifresi" id="password" name="password" type="text" class="validate">
-                <label for="password">Şifre</label>
+            <div class="input-field col s12 m6 offset-m3">
+                <input placeholder="Please Enter Password" id="password" name="password" type="text" class="validate">
+                <label for="password">Password</label>
             </div>
-            <div class="input-field col s6 offset-m3">
-                <button type="submit" class="waves-effect waves-light btn"><i class="material-icons left">add</i>YENİ
-                    KİŞİ EKLE</button>
+            <div class="input-field col s12 m6 offset-m3">
+                <button type="submit" class="waves-effect waves-light btn"><i class="material-icons left">add</i>Add New Person</button>
             </div>
-            <div class="input-field col s6 offset-m3">
+            <div class="input-field col s12 m6 offset-m3">
                 <blockquote>
-                    <p><b>Not: </b> Oluşturduğunuz Kişilere Ait Fotoğrafları Daha Sonra Eklemeyi Unutmayınız...</p>
+                    <p><b>Alert: </b> Do not forget to add the photos of the person you created later....</p>
                 </blockquote>
             </div>
         </form>

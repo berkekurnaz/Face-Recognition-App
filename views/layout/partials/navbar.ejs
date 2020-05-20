@@ -1,6 +1,21 @@
+<style>
+
+  @media only screen and (max-width: 800px) {
+    #logomy{
+      font-size: 18px;
+    }
+  }
+  @media only screen and (max-width: 1310px) {
+    #ulmy{
+      display: none;
+    }
+  }
+</style>
+
 <nav class="light-blue lighten-1" role="navigation">
-  <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Face Recognition App</a>
-    <ul class="right hide-on-med-and-down">
+  <div class="nav-wrapper container">
+    <a id="logomy" id="logo-container" href="/" class="brand-logo">Face Recognition App</a>
+    <ul id="ulmy" class="right hide-on-med-and-down">
       <li><a href="/"><i class="material-icons left">home</i>Main Menu</a></li>
       <li><a href="/person"><i class="material-icons left">people</i>Persons</a></li>
       <li><a href="/settings"><i class="material-icons left">settings</i>Settings</a></li>
@@ -8,10 +23,10 @@
     </ul>
 
     <ul id="nav-mobile" class="sidenav">
-        <li><a href="/"><i class="material-icons left">home</i>Main Menu</a></li>
-        <li><a href="/person"><i class="material-icons left">people</i>Persons</a></li>
-        <li><a href="/settings"><i class="material-icons left">settings</i>Settings</a></li>
-        <li><a href="/howtouse"><i class="material-icons left">help</i>How To Use</a></li>
+      <li><a href="/"><i class="material-icons left">home</i>Main Menu</a></li>
+      <li><a href="/person"><i class="material-icons left">people</i>Persons</a></li>
+      <li><a href="/settings"><i class="material-icons left">settings</i>Settings</a></li>
+      <li><a href="/howtouse"><i class="material-icons left">help</i>How To Use</a></li>
     </ul>
     <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
   </div>

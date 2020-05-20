@@ -1,6 +1,6 @@
 <div class="container center-align">
     <div class="row">
-        <h3>Kişi Düzenle</h3>
+        <h3>Update Person</h3>
         <br />
         <form method="POST" action="/person/update">
             <div class="input-field col s6 offset-m3">
@@ -9,19 +9,19 @@
             </div>
             <div class="input-field col s6 offset-m3">
                 <input value="<%= person.namesurname %>" id="namesurname" name="namesurname" type="text" class="validate">
-                <label for="namesurname">Ad Soyad</label>
+                <label for="namesurname">Name Surname</label>
             </div>
             <div class="input-field col s6 offset-m3">
                 <input value="<%= person.address %>" id="address" name="address" type="text" class="validate">
-                <label for="address">Adres</label>
+                <label for="address">Address</label>
             </div>
             <div class="input-field col s6 offset-m3">
                 <input value="<%= person.username %>" id="username" name="username" type="text" class="validate">
-                <label for="username">Kullanıcı Adı</label>
+                <label for="username">Username</label>
             </div>
             <div class="input-field col s6 offset-m3">
                 <input value="<%= person.password %>" id="password" name="password" type="text" class="validate">
-                <label for="password">Şifre</label>
+                <label for="password">Password</label>
             </div>
             <div class="input-field col s6 offset-m3">
                 <button type="submit" class="waves-effect waves-light btn"><i class="material-icons left">add</i>Update
@@ -39,7 +39,7 @@
             </div>
             <div class="input-field col s6 offset-m3">
                     <blockquote>
-                        <p><b>Not: </b> Oluşturduğunuz Kişilere Ait Fotoğraflar Veritabanından Silinir...</p>
+                        <p><b>Not: </b> Photos of Person You Create Are Deleted from the Database...</p>
                     </blockquote>
                 </div>
         </form>

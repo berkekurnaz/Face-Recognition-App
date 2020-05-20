@@ -15,9 +15,20 @@ async function start() {
   //document.body.append("Tüm modeller Yüklendi..");
 
   myImage.addEventListener("change", async () => {
+    
+    var canvasfirst =document.getElementsByTagName('canvas');
+    if(canvasfirst[0] != null){
+      canvasfirst[0].remove();
+    }
+
+    var imagefirst =document.getElementsByTagName('img');
+    if(imagefirst[0] != null){
+      imagefirst[0].remove();
+    }
+
     const selectedImage = await faceapi.bufferToImage(myImage.files[0]);
     document.body.append(selectedImage);
-
+    
     const detections = await faceapi
       .detectAllFaces(selectedImage)
       .withFaceLandmarks()
@@ -31,7 +42,7 @@ async function start() {
     const resizedDetections = faceapi.resizeResults(detections, displaySize);
 
     const canvas = faceapi.createCanvasFromMedia(selectedImage);
-    document.body.append(canvas);
+    document.getElementById("imagearea").append(canvas);
     faceapi.matchDimensions(canvas, displaySize);
 
     // resizedDetections.forEach(d => {

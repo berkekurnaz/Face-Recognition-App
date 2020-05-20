@@ -29,7 +29,6 @@ exports.getLiveRecognitionPage = (req, res, next) => {
         },
     ])
     promise.then((data) => {
-        console.log(data);
         data = JSON.stringify(data);
         res.render('index/liverecognition', { layout: false, personList: data });
     }).catch((err) => {
@@ -54,7 +53,6 @@ exports.getImageRecognitionPage = (req, res, next) => {
         },
     ])
     promise.then((data) => {
-        console.log(data);
         data = JSON.stringify(data);
         res.render('index/imagerecognition', { layout: false, personList: data });
     }).catch((err) => {
