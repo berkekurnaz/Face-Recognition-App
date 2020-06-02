@@ -4,7 +4,9 @@ It can make recognition with your device's camera or images. Can be used with Io
 
 > **Website :** http://facerecognitionapp.berkekurnaz.com/ <br/>
 
-> **Tutorials :** http://facerecognitionapp.berkekurnaz.com/
+> **Tutorials :** http://facerecognitionapp.berkekurnaz.com/ <br/>
+
+[![Image01](https://raw.githubusercontent.com/berkekurnaz/Face-Recognition-App/master/sample_images/trailer.gif)]()
 
 ## How does it work ?
 In fact, the face recognition system works quite simply. There is a mongodb database in the background for saving people and pictures. Then, when you come to the live recognition page, these pictures and people are uploaded to the page. Faceapi.js does everything from now on. <br/>
@@ -18,10 +20,10 @@ We love Javascript.
 - Materialize Css
 
 ## Tutorials
-- 1-) Installation Guide : [Youtube Video](https://www.google.com)
-- 2-) Database Configure : [Youtube Video](https://www.google.com)
-- 3-) Add Person And Image : [Youtube Video](https://www.google.com)
-- 4-) Face Recognition : [Youtube Video](https://www.google.com)
+- 1-) Installation Guide : [Youtube Video](https://www.youtube.com/playlist?list=PLzC8Ycv_euGy-Q1u8-jDFkH2MEOSVuc60)
+- 2-) Database Configure : [Youtube Video](https://www.youtube.com/playlist?list=PLzC8Ycv_euGy-Q1u8-jDFkH2MEOSVuc60)
+- 3-) Add Person And Image : [Youtube Video](https://www.youtube.com/playlist?list=PLzC8Ycv_euGy-Q1u8-jDFkH2MEOSVuc60)
+- 4-) Face Recognition : [Youtube Video](https://www.youtube.com/playlist?list=PLzC8Ycv_euGy-Q1u8-jDFkH2MEOSVuc60)
 
 ## Installation
 - 1-) Download this repository to your machine.
@@ -53,4 +55,6 @@ npm start
 > Github: https://github.com/berkekurnaz
 
 ## Sample Images
-[![N|Image01](https://raw.githubusercontent.com/berkekurnaz/Face-Recognition-App/master/sample_images/sampleimage01.png)]()
+[![Image01](https://raw.githubusercontent.com/berkekurnaz/Face-Recognition-App/master/sample_images/sampleimg01.png)]()
+[![Image02](https://raw.githubusercontent.com/berkekurnaz/Face-Recognition-App/master/sample_images/sampleimg02.png)]()
+[![Image03](https://raw.githubusercontent.com/berkekurnaz/Face-Recognition-App/master/sample_images/sampleimg03.png)]()
